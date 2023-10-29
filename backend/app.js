@@ -11,6 +11,9 @@ const MyData = require('./models/apiresponseStorage');
 const mongoose = require("mongoose");
 const cors = require('cors');
 require('dotenv').config();
+const https = require('https');
+const fs = require('fs');
+
 
 
 /*
@@ -45,6 +48,16 @@ app.use(cors());
 
 /* Database connection */
 /* Database connection */
+const key = fs.readFileSync(__dirname+'/selfsigned.key');
+const cert = fs.readFileSync(__dirname+'/selfsigned.crt');
+
+const options = {
+    key: key,
+    cert: cert
+}
+
+const httpsServer = https.createServer(options, app);
+
 mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -94,6 +107,6 @@ app.get('/disconnect', function (req, res) {
 
 
 /* server */
-app.listen(2000, function (req, res) {
-    info('Backend is up at 2000');
+httpsServer.listen(2000, function (req, res) {
+    info('Backend is up at https://******:2000');
 });

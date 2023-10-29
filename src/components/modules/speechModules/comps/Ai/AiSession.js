@@ -156,8 +156,9 @@ export default function AiSession() {
     return (
         <>
             <h5 className="card-title">Ai Session</h5>
-            <p className="card-text">With supporting text below as a natural lead-in to additional
-                content.</p>
+            <p className="card-text">Engage in a conversational AI session to get assistance and save
+                important
+                information.</p>
             <a href="#" className="btn btn-primary" onClick={startListening}>Start Ai Session</a>
             <div className={"container text-start shadow-lg p-3 mb-5 bg-body-tertiary rounded mt-5"}>
                 {showRes()}

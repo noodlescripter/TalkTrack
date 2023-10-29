@@ -7,6 +7,6 @@ app.get('/home', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(8000, () => {
-    console.log("Server is listening to 8000");
+app.listen(3000, () => {
+    console.log("Server is listening to 3000");
 });

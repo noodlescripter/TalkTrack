@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app-data:/usr/src/app1
+    environment:
+      - NODE_ENV=production
+    container_name: fillmedaddi_ui
+    image: fillmedaddi_ui

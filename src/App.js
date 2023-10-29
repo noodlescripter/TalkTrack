@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from "./components/navs/NavBar";
+import {Outlet} from "react-router-dom";
+import MainCard from "./components/modules/main/Maincard";
+import Footer from "./components/modules/footer/Footer";
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+
+function Copyright(props) {
+    return (
+        <Typography variant="body2" color="text.light" align="center" {...props}>
+            {'Copyright © '}
+            <Link color="inherit" href="https://noodlesripter.com/">
+                @noodlescripter
+            </Link>{' '}
+            {new Date().getFullYear()}
+            {'.'}
+        </Typography>
+    );
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <NavBar></NavBar>
+            <MainCard></MainCard>
+            <main>
+                <Outlet/>
+                <div className={"mb-3"}>
+                    <Copyright sx={{mt: 2}}/>
+                </div>
+
+            </main>
+
+        </>
+    );
 }
 
 export default App;

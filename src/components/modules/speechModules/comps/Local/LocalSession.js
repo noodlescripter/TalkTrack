@@ -47,13 +47,15 @@ export default function LocalSession() {
                 method: 'POST',
                 body: JSON.stringify({
                     iden: iden,
-                    storedData: storedData
+                    storedData: humanVoice
                 }),
                 headers: {
                     'Content-Type': 'application/json'
                 }
             });
             if (response.ok) {
+                setIden('');
+                setHumanVoice('')
                 console.log("working")
                 setSave('ok');
             } else {

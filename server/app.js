@@ -11,7 +11,7 @@ const cert = fs.readFileSync(__dirname + '/selfsigned.crt');
 
 const options = {
     key:key,
-    cert: cert
+    cert:cert
 }
 
 const httpsServer = https.createServer(options, app);

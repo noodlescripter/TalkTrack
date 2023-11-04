@@ -1,70 +1,158 @@
-# Getting Started with Create React App
+# FillmeDaddi - AI-Powered Conversation and Information Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FillmeDaddi is a React-based web application that leverages AI technology to engage in conversations with an AI and maintain records of all the information exchanged. It allows users to chat with the AI, and also offers a voice interface for talking to the AI. Additionally, it features a hands-free search function for accessing information effortlessly.
 
-## Available Scripts
+## Table of Contents
+- [FillmeDaddi - AI-Powered Conversation and Information Management App](#fillmedaddi---ai-powered-conversation-and-information-management-app)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Development](#development)
+  - [Usage](#usage)
+  - [Technologies Used](#technologies-used)
+  - [Demo](#demo)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Chat with AI**: Engage in text-based conversations with an AI chatbot.
+2. **Voice Interaction**: Communicate with the AI using your voice through speech recognition.
+3. **Record Keeping**: Automatically store and organize all conversation data for future reference.
+4. **Information Retrieval**: Conduct hands-free searches to access information stored in the app.
+5. **User-Friendly Interface**: A clean and intuitive user interface for a seamless experience.
+6. **AI-Powered Responses**: Experience intelligent and context-aware responses from the AI.
+7. **Customization**: Tailor the AI's behavior and appearance to your preferences.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Follow these steps to install and run FillmeDaddi locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine:
 
-### `npm run build`
+   ```shell
+   git clone https://github.com/noodlescripter/fillmedaddi.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```shell
+   cd fillmedaddi/backend
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Make docker image and start the container:
 
-### `npm run eject`
+   ```shell
+   docker-compose up -d
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```shell
+   cd fillmedaddi
+   ```
+5. Install the required library:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```shell
+   npm install
+   ```
+6. Build the app for development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```shell
+   npm run build
+   ```
 
-## Learn More
+7. Copy build to server dir:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```shell
+   sudo cp -r build/ ./server
+   ```
+8. Start the fornt-end by navigating to server dir:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```shell
+   docker-compose up -d
+   ```
 
-### Code Splitting
+. Open your web browser and access the application at `https://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Development
 
-### Analyzing the Bundle Size
+Follow these steps for development purposes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repository to your local machine:
 
-### Making a Progressive Web App
+   ```shell
+   git clone https://github.com/noodlescripter/fillmedaddi.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Navigate to the project directory:
 
-### Advanced Configuration
+   ```shell
+   cd fillmedaddi/backend
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Make docker image and start the container:
 
-### Deployment
+   ```shell
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Start the development server:
 
-### `npm run build` fails to minify
+   ```shell
+   cd fillmedaddi
+   ```
+5. Install the required library:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```shell
+   npm install
+   ```
+6. Build the app for development server:
+
+   ```shell
+   npm run https 
+   ```
+   or
+
+   ```shell
+   npm start
+   ```
+
+## Usage
+
+Once the application is running, you can:
+
+- Initiate a conversation with the AI through the chat interface.
+- Use the voice recognition feature to talk to the AI.
+- Browse and search for stored information using the hands-free search function.
+- Customize the AI's behavior and appearance through the settings.
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- AI-powered Chatbot: Utilizes AI technology for natural language processing and generating responses.
+- Speech Recognition: Integrates with speech recognition APIs to enable voice interactions.
+- Database (e.g., MongoDB): Stores and manages conversation data.
+- Web Speech API: For voice recognition and synthesis.
+- Rest API: For server side coding.
+- Bootstrap/CSS: For creating the user interface and styling.
+
+## Demo
+![FillmeDaddi](images/5.png)
+![FillmeDaddi](images/1.png)
+![FillmeDaddi](images/2.png)
+![FillmeDaddi](images/3.png)
+![FillmeDaddi](images/4.png)
+
+## Contributing
+
+Yes Please!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+Feel free to reach out to the project maintainers or open issues if you have questions or encounter any problems. We hope FillmeDaddi enhances your conversational and information management experience!

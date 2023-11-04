@@ -47,13 +47,15 @@ export default function LocalSession() {
                 method: 'POST',
                 body: JSON.stringify({
                     iden: iden,
-                    storedData: storedData
+                    storedData: humanVoice
                 }),
                 headers: {
                     'Content-Type': 'application/json'
                 }
             });
             if (response.ok) {
+                setIden('');
+                setHumanVoice('')
                 console.log("working")
                 setSave('ok');
             } else {
@@ -123,8 +125,7 @@ export default function LocalSession() {
                 statusMsg()
             }
             <h5 className="card-title">Local Session</h5>
-            <p className="card-text">With supporting text below as a natural lead-in to additional
-                content.</p>
+            <p className="card-text">The Local Session module records conversations and saves them in a database.</p>
             <a href="#" className="btn btn-primary" onClick={startListening}>Start Local Session</a>
             <div className={"container shadow-sm text-center mt-3"}>
                 {

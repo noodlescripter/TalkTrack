@@ -13,6 +13,7 @@
 /server/node_modules
 /server/backend/node_modules
 /backend/node_modules
+/backend/database/data
 
 # misc
 .DS_Store

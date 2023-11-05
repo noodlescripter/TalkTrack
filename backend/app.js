@@ -103,10 +103,8 @@ app.get('/disconnect', function (req, res) {
     res.redirect('/login');
 });
 
-
-
-
 /* server */
 httpsServer.listen(2000, function (req, res) {
     info('Backend is up at https://******:2000');
+    info("Note: This API server is running on https, Please go to following link and accept the risk before continuing: ", "https://localhost:2000")
 });

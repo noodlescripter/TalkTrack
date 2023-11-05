@@ -24,7 +24,9 @@ const [apikey, setapiKey] = useState('');
                                     aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-
+                            <div className="text-center">
+                                <p>To get the api key visit here: <a href="https://openai.com/product">OpenAI</a></p>
+                            </div>
                             <div className="mb-3">
                                 <label htmlFor="dburl" className="col-form-label">Secret Key</label>
                                 <input type="password" className="form-control" id="dburl" onChange={handleChange}/>

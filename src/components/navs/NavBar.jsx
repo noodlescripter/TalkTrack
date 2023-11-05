@@ -5,7 +5,7 @@ import DBConn from "../modules/speechModules/comps/connections/DBConn";
 import APIkey from "../modules/speechModules/comps/connections/APIkey";
 
 export default function NavBar() {
-    const brandName = "FillMeDaddi"
+    const brandName = "TALKtrack"
     const [searchInput, setSearchInput] = useState('');
     const [datas, setDatas] = useState([]);
     const [start, setStart] = useState(0);

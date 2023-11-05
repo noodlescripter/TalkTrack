@@ -1,9 +1,9 @@
 # FillmeDaddi - AI-Powered Conversation and Information Management App
 
-FillmeDaddi is a React-based web application that leverages AI technology to engage in conversations with an AI and maintain records of all the information exchanged. It allows users to chat with the AI, and also offers a voice interface for talking to the AI. Additionally, it features a hands-free search function for accessing information effortlessly.
+TalkTrack is a React-based web application that leverages AI technology to engage in conversations with an AI and maintain records of all the information exchanged. It allows users to chat with the AI, and also offers a voice interface for talking to the AI. Additionally, it features a hands-free search function for accessing information effortlessly.
 
 ## Table of Contents
-- [FillmeDaddi - AI-Powered Conversation and Information Management App](#fillmedaddi---ai-powered-conversation-and-information-management-app)
+- [TalkTrack - AI-Powered Conversation and Information Management App](#talktrack---ai-powered-conversation-and-information-management-app)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Installation](#installation)
@@ -25,6 +25,12 @@ FillmeDaddi is a React-based web application that leverages AI technology to eng
 7. **Customization**: Tailor the AI's behavior and appearance to your preferences.
 
 
+## Prerequesite
+1. Docker
+2. docker-compose
+3. NodeJS 14^.
+5. Some coding knowledge.
+
 ## Installation
 
 Follow these steps to install and run FillmeDaddi locally:
@@ -32,7 +38,7 @@ Follow these steps to install and run FillmeDaddi locally:
 1. Clone the repository to your local machine:
 
    ```shell
-   git clone https://github.com/noodlescripter/fillmedaddi.git
+   git clone https://github.com/noodlescripter/TalkTrack.git
    ```
 
 2. Navigate to the project directory:
@@ -40,41 +46,51 @@ Follow these steps to install and run FillmeDaddi locally:
    ```shell
    cd fillmedaddi/backend
    ```
+3. Create .env file and paste below
+   ```shell
+   DB_URL=mongodb://build4docker:build4docker@localhost:27017/talktrack
+   ```
 
-3. Make docker image and start the container:
+4. Make docker image and start the container:
 
    ```shell
    docker-compose up -d
    ```
 
-4. Start the development server:
+5. Start the development server:
 
    ```shell
    cd fillmedaddi
    ```
-5. Install the required library:
+6. Install the required library:
 
    ```shell
    npm install
    ```
-6. Build the app for development server:
+7. Create .env file and paste below
+   ```shell
+   REACT_APP_BACKEND_URL=https://localhost:2000
+   ```
+
+8. Build the app for development server:
 
    ```shell
    npm run build
    ```
 
-7. Copy build to server dir:
+9. Copy build to server dir:
 
    ```shell
    sudo cp -r build/ ./server
    ```
-8. Start the fornt-end by navigating to server dir:
+10. Start the fornt-end by navigating to server dir:
 
    ```shell
    docker-compose up -d
    ```
 
-. Open your web browser and access the application at `https://localhost:3000`.
+**** Open your web browser and access the application at `https://localhost:3000`.
+Note:  For cloud deployment purposes this backend (:3000) will be running on https, you will need to navigate to the url and accept the risk so that front-end can communicate with the back-end.
 
 ## Development
 
@@ -83,7 +99,7 @@ Follow these steps for development purposes:
 1. Clone the repository to your local machine:
 
    ```shell
-   git clone https://github.com/noodlescripter/fillmedaddi.git
+   git clone https://github.com/noodlescripter/TalkTrack.git
    ```
 
 2. Navigate to the project directory:
@@ -119,6 +135,15 @@ Follow these steps for development purposes:
    npm start
    ```
 
+Note: You will still need to create two .env files (Please follow installation steps 3 and 7).
+
+## Database setup
+6. Navigate to the backend/database and run 
+```shell
+   docker-compose up -d
+```
+
+
 ## Usage
 
 Once the application is running, you can:
@@ -135,15 +160,16 @@ Once the application is running, you can:
 - Speech Recognition: Integrates with speech recognition APIs to enable voice interactions.
 - Database (e.g., MongoDB): Stores and manages conversation data.
 - Web Speech API: For voice recognition and synthesis.
-- Rest API: For server side coding.
+- Server Side: Express and REST.
 - Bootstrap/CSS: For creating the user interface and styling.
 
 ## Demo
-![FillmeDaddi](images/5.png)
 ![FillmeDaddi](images/1.png)
 ![FillmeDaddi](images/2.png)
 ![FillmeDaddi](images/3.png)
 ![FillmeDaddi](images/4.png)
+![FillmeDaddi](images/6.png)
+![FillmeDaddi](images/7.png)
 
 ## Contributing
 

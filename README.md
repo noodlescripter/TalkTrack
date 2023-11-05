@@ -1,4 +1,4 @@
-# FillmeDaddi - AI-Powered Conversation and Information Management App
+# TalkTrack - AI-Powered Conversation and Information Management App
 
 TalkTrack is a React-based web application that leverages AI technology to engage in conversations with an AI and maintain records of all the information exchanged. It allows users to chat with the AI, and also offers a voice interface for talking to the AI. Additionally, it features a hands-free search function for accessing information effortlessly.
 
@@ -33,7 +33,7 @@ TalkTrack is a React-based web application that leverages AI technology to engag
 
 ## Installation
 
-Follow these steps to install and run FillmeDaddi locally:
+Follow these steps to install and run TalkTrack locally:
 
 1. Clone the repository to your local machine:
 
@@ -44,7 +44,7 @@ Follow these steps to install and run FillmeDaddi locally:
 2. Navigate to the project directory:
 
    ```shell
-   cd fillmedaddi/backend
+   cd TalkTrack/backend
    ```
 3. Create .env file and paste below
    ```shell
@@ -60,7 +60,7 @@ Follow these steps to install and run FillmeDaddi locally:
 5. Start the development server:
 
    ```shell
-   cd fillmedaddi
+   cd TalkTrack
    ```
 6. Install the required library:
 
@@ -105,7 +105,7 @@ Follow these steps for development purposes:
 2. Navigate to the project directory:
 
    ```shell
-   cd fillmedaddi/backend
+   cd TalkTrack/backend
    ```
 
 3. Make docker image and start the container:
@@ -117,7 +117,7 @@ Follow these steps for development purposes:
 4. Start the development server:
 
    ```shell
-   cd fillmedaddi
+   cd TalkTrack
    ```
 5. Install the required library:
 
@@ -164,11 +164,11 @@ Once the application is running, you can:
 - Bootstrap/CSS: For creating the user interface and styling.
 
 ## Demo
-![FillmeDaddi](images/1.png)
-![FillmeDaddi](images/2.png)
-![FillmeDaddi](images/3.png)
-![FillmeDaddi](images/4.png)
-![FillmeDaddi](images/6.png)
+![TalkTrack](images/1.png)
+![TalkTrack](images/2.png)
+![TalkTrack](images/3.png)
+![TalkTrack](images/4.png)
+![TalkTrack](images/6.png)
 
 ## Contributing
 
@@ -180,4 +180,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Feel free to reach out to the project maintainers or open issues if you have questions or encounter any problems. We hope FillmeDaddi enhances your conversational and information management experience!
+Feel free to reach out to the project maintainers or open issues if you have questions or encounter any problems. We hope TalkTrack enhances your conversational and information management experience!

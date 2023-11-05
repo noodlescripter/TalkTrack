@@ -9,7 +9,7 @@ import Link from '@mui/material/Link';
 function Copyright(props) {
     return (
         <Typography variant="body2" color="text.light" align="center" {...props}>
-            {'Copyright © FillMeDaddi_BETA_1.0.0___   '}
+            {'Copyright © TALKtrack_1.0.0___   '}
             <Link color="inherit" href="https://noodlesripter.com/">
                 @noodlescripter
             </Link>{' '}

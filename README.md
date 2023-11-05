@@ -169,7 +169,6 @@ Once the application is running, you can:
 ![FillmeDaddi](images/3.png)
 ![FillmeDaddi](images/4.png)
 ![FillmeDaddi](images/6.png)
-![FillmeDaddi](images/7.png)
 
 ## Contributing
 
